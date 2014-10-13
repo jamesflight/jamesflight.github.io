@@ -1,19 +1,87 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]>      <html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>      <html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html> <!--<![endif]-->
+<head>
 
-  {% include head.html %}
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta name="keywords" content="HTML5 Template" />
+  <meta name="description" content="Multipress - Responsive Multipurpose HTML5 Template">
+  <meta name="author" content="">
+
+  <title> Premium Layers - Responsive HTML5 vCard Template</title>
+
+  <!-- Mobile Meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+
+  <!-- Google Webfonts -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,700italic,600italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Neuton:400,200,300' rel='stylesheet' type='text/css'>
+
+  <!--[if lt IE 9]>
+  <script src="/js/libs/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Theme Styles CSS-->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/flexslider.css"/>
+  <link rel="stylesheet" href="css/nivo-lightbox.css" />
+  <link rel="stylesheet" href="images/themes/default/default.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+
+  <!--[if lt IE 9]>
+  <script src="/js/libs/html5.js"></script>
+  <![endif]-->
+
+  <!-- Style Switch -->
+  <link rel="stylesheet" type="text/css" href="css/colors/yellow-black.css" title="yellow" media="screen" />
+
+</head>
+
 
   <body>
 
-    {% include header.html %}
+<!-- MAIN CONTENT -->
+<div class="main-content">
+  <div class="container no-padding">
+    <div class="row">
+      <div class="col-md-3 l-content">
+        {% include menu.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+        <div class="col-md-9 r-content">
+          <div class="flexslider">
+            <div class="slides">
+            {{ content }}
+
+            
+            
+
+            
+          </div>
+        </div>
+        {% include footer.html %}
       </div>
     </div>
+  </div>
+</div>
 
-    {% include footer.html %}
+<!-- JavaScript -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+
 
   </body>
 
