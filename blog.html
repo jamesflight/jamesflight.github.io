@@ -13,9 +13,30 @@ layout: default
 
 								
 							</div>
-							<div class="blog-wrap">
-										Coming soon...
+							<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+
+  <div class="blog-wrap">
+  	{% for post in site.posts %}
+									<article class="animated flipInX">
+										<div class="row">
+											
+											<div class="col-md-12">
+												<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+												<div class="post-meta">
+													<i class="fa fa-calendar"></i> <a href="#">{{ post.date | date: "%b %-d, %Y" }}</a> 
+													<i class="fa fa-user"></i> <a href="http://www.jamesflight.co.uk">James Flight</a>
+												</div>
+											</div>
 										</div>
+									</article>
+									{% endfor %}
+									
+								</div>
+
+</div>
 							<br>
 						</div>
 
