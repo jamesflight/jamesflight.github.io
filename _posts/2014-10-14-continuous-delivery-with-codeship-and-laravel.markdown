@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Continuous delviery with Codeship, Laravel and Heroku"
+title:  "Continuous delivery with Codeship, Laravel and Heroku"
 date:   2014-10-14 12:20:51
 ---
-With tools like Codeship available, setting up continuous delivery is now a possibility for businesses of any scale. Having just setup a straightforward continouos delivery arrangement for [www.careselector.com](http://www.careselector.com), I figured this would be a good time to document my efforts in using Codeship with a Laravel app.
+With tools like Codeship available, setting up continuous delivery is now a possibility for businesses of any scale. Having just setup a straightforward continuous delivery arrangement for [www.careselector.com](http://www.careselector.com), I figured this would be a good time to document my efforts in using Codeship with a Laravel app.
 
 Database configuration
 ------------------------
